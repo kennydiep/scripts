@@ -1,5 +1,13 @@
 -- vs_shortcuts --
 
+/*Description: Screen Toggles
+               Toggle Primary Side Bar - Ctrl + B
+               Toggle Panel - Ctrl + J
+               Toggle Secondary Side Bar - Ctrl + Alt + B
+               Customized Layout
+*/
+Command:
+
 /*Description: Focus Left Panel (Explorer - Ctrl + Shift + E 
                             , Search - Ctrl + Shift + F
                             , Git - Ctrl + Shift + G
