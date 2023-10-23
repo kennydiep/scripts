@@ -1,0 +1,24 @@
+-- vs_shortcuts --
+
+/*Description: Focus Left Panel (Explorer - Ctrl + Shift + E 
+                            , Search - Ctrl + Shift + F
+                            , Git - Ctrl + Shift + G
+                            , Run and Debug - Ctrl + Shift + D 
+                            , Extensions - Ctrl + Shift + X)
+*/
+Command: Ctrl + 0
+
+/*Description: Shortcuts page 
+*/
+Command: Ctrl + K then Ctrl + S 
+
+/*Description: Close active tab / editor. 
+               Close all tabs. 
+*/
+Command: Ctrl + W
+        ,Ctrl + K then Ctrl + W
+
+/*Description: Switch between tabs.
+*/
+Command: Ctrl + Shift 
+

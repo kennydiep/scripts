@@ -1,0 +1,173 @@
+-- Vim Shorcuts -- 
+
+/*Description: Insert Mode
+*/
+Command: Ctrl + I 
+
+/*Description: Command Mode
+*/
+Command: Esc 
+
+/*Description: Execution Mode
+*/
+Command: : 
+
+/*Description: Search Mode
+               Use / then add your word you want to search for and hit enter.
+               After,  use Shift + N to go to previous appearance of the word. 
+                       use n to go to next appearance of the word. 
+                     
+*/
+Command: < + a + p 
+        ,> + a + p 
+
+
+/*Description: Go to beginning of the file.
+*/
+Command: g + g
+
+/*Description: Go to end of the file.  
+*/
+Command: Shift + G
+
+/*Description: Go to beginning of the line.
+               Beginning of the line,    
+              ,Beginning of the line based on non white space
+              ,Beginning of before first non white space letter and Insert Mode
+*/
+Command: 0
+       , Shift + ^ OR Shift + _ 
+       , Shift + I
+
+/*Description: Go to end of line. 
+               End of the line       
+              ,End of the line based on non white space
+              ,End of the line and Insert Mode
+*/
+Command: Shift + $
+       , g + _
+       , Shift + A
+
+/*Description: Visual Mode
+               This mode has couple of options. Based on the position here are the description.
+               Selects all on the current row
+              ,Selects at the current position for all of the rows
+              ,Selects the select text and applies to the movement. 
+*/
+Command: Ctrl + V
+       , Shift + V 
+       , v 
+
+/*Description: 
+*/
+Command: 
+
+/*Description: Focus Left Panel (Explorer - Ctrl + Shift + E 
+                            , Search - Ctrl + Shift + F
+                            , Git - Ctrl + Shift + G
+                            , Run and Debug - Ctrl + Shift + D 
+                            , Extensions - Ctrl + Shift + X)
+*/
+Command: Ctrl + 0
+
+/*Description: <CR><LN> after current cursor position and enters insert mode. 
+*/
+Command: o
+
+/*Description: Copy and paste. Must enter Visual Mode, then use arrows to move up or down to select desired lines.
+               Press copy (y) and then paste (v) on the line you want to paste. 
+*/
+Command: Provided in the description
+
+/*Description: Delete line.
+               In command mode.     
+*/
+Command: d
+
+/*Description: Delete from cursor position to end of line. 
+               In command mode. Informational: This also yanks the delete word so you could paste (p)     
+              
+*/
+Command: D
+
+/*Description: Delete word
+               Delete word from current position to end of word. 
+              ,Delete entire word
+              ,
+*/
+Command:      d + w 
+              d + a + w
+              
+/*Description: Indent and Unindent block of sequential lines.
+               Unindent
+              ,Indent 
+*/
+Command: < + a + p 
+        ,> + a + p 
+
+/*Description: Go through words
+              ,w: Moves the cursor to the start of the next word.
+              ,W: Moves the cursor to the start of the next word, but treats punctuation as part of the word.
+              ,e: Moves the cursor to the end of the current word.
+              ,E: Moves the cursor to the end of the current word, but treats punctuation as part of the word. 
+              ,b: Move the cursor to the start of the previous word.
+              ,B: Move the cursor to the start of the previous word, but treat punctuation as part of the word.
+*/
+Command:  w 
+        , Shift + W
+        , e
+        , Shift + E
+        , b
+        , Shift + B
+
+/*Description: Scrolling through the file. 
+               Page up
+              ,Page down 
+*/
+Command: Ctrl + B
+        ,Ctrl + F 
+
+/* Format these tomorrow, they should be very useful. */
+
+/*Description: Deleting Characters:
+*/
+Command: x:  Delete the character under the cursor.
+         X:  Delete the character before the cursor.
+         D:  Delete from the cursor to the end of the line.
+         d$: Same as D, delete to the end of the line.
+         d0: Delete from the cursor to the beginning of the line.
+
+/*Description: Deleting Words
+*/
+Command: dw: Delete from the cursor to the end of the word.
+         dW: Delete from the cursor to the end of the word, treating punctuation as part of the word.
+         db: Delete from the cursor to the start of the word.
+         daw: Delete the word under the cursor, including any surrounding whitespace.
+         diw: Delete the word under the cursor, but not the surrounding whitespace.
+
+/*Description: Deleting Lines
+*/
+Command: dd: Delete the entire current line.
+         d2d: Delete the current line and the next line (you can replace 2 with any number to delete multiple lines).
+         :delete: Ex command to delete the current line (you can combine with line numbers or ranges).
+
+
+/*Description: Deleting Around/Inside:
+*/
+Command: da( or da): Delete around the parentheses (includes the parentheses).
+         di( or di): Delete inside the parentheses (does not include the parentheses).
+         Similarly, you can use da[, da{, da", da' and their respective di versions.
+
+
+/*Description: Deleting Till/Until a Character:
+*/
+Command: dt<char>: Delete until (but not including) the next occurrence of <char> on the line.
+         dT<char>: Delete until (but not including) the previous occurrence of <char> on the line.
+         df<char>: Delete up to and including the next occurrence of <char> on the line.
+         dF<char>: Delete up to and including the previous occurrence of <char> on the line.
+
+
+/*Description: Using Counts with Delete:
+*/
+Command: d3w: Delete the next three words.
+         2dd: Delete the next two lines.
